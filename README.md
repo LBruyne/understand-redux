@@ -14,7 +14,7 @@ The app.tsx, which is a simple counter, is a Demo component using Redux for stat
 It implements following APIs in Redux:
 
 - createStore
-- applyMiddlewares
+- applyMiddlewares (with a simple-react-thunk middleware for verifying)
 
 and following APIs in React-Redux:
 

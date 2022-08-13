@@ -1,4 +1,5 @@
-import {createStore} from "./redux";
+import {applyMiddleware, createStore} from "./redux";
+import simpleThunk from "./simples-thunk/simple-thunk";
 
 const INITIAL_STATE = {
     value: 10
@@ -23,4 +24,4 @@ const reducer = (state = INITIAL_STATE, action: any) => {
     }
 }
 
-export const store = createStore(reducer)
+export const store = createStore(reducer, applyMiddleware(simpleThunk))
